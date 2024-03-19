@@ -1,0 +1,39 @@
+.general {
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+
+    & .procesos{
+        width: 200px;
+        height: 250px;
+        border: 2px solid black;
+        margin: auto;
+
+        & p {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    }
+
+    & .ram {
+        width: 200px;
+        height: 400px;
+        border: 2px solid black;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        box-sizing: border-box;
+
+        & .particion {
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 5px;
+        }
+    }
+}
+
+
+
